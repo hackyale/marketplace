@@ -1,7 +1,7 @@
 class CreateProjects < ActiveRecord::Migration
   def change
     create_table :projects do |t|
-      belongs_to :user
+      t.belongs_to :user
 
       t.string :name
       t.text :description
